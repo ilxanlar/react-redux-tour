@@ -1,0 +1,94 @@
+#tour-wrap {
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#tour-wrap .tour-button {
+  background: #fff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  color: #555;
+  font: inherit;
+  font-size: 11px;
+  outline: none;
+  padding: 2px 8px;
+}
+
+#tour-wrap .tour-button-primary {
+  background: cadetblue;
+  color: #fff;
+}
+
+#tour-wrap .tour-button-secondary {
+  border-color: cadetblue;
+  color: cadetblue;
+}
+
+#tour-wrap .tour-button[disabled] {
+  background: #fff;
+  border-color: #eee;
+  color: #bbb;
+  cursor: not-allowed;
+}
+
+#tour-overlay {
+  background: rgba(255, 255, 255, 0.5);
+  border: 10000px solid rgba(0, 0, 0, 0.7);
+  box-sizing: content-box;
+  margin-top: -10000px;
+  margin-left: -10000px;
+  position: absolute;
+  transition: all 0.2s ease;
+}
+
+#tour-dialog {
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  font-size: 12px;
+  line-height: 16px;
+  transition: all 0.1s ease;
+}
+
+#tour-dialog .dialog-header {
+  color: #333;
+  padding: 10px 10px 7px;
+}
+
+#tour-dialog .dialog-description {
+  color: #777;
+  padding: 7px 10px 10px;
+}
+
+#tour-dialog .dialog-footer {
+  border-top: 1px solid #eee;
+  padding: 10px;
+}
+
+#tour-dialog .dialog-footer:after {
+  clear: both;
+  content: '';
+  display: block;
+}
+
+#tour-dialog .dialog-footer-nav {
+  float: left;
+}
+
+#tour-dialog .tour-prev,
+#tour-dialog .tour-next {
+  margin-right: 5px;
+}
+
+#tour-dialog .dialog-footer-control {
+  float: right;
+}
+
+#tour-dialog .tour-skip,
+#tour-dialog .tour-end {
+  margin-left: 5px;
+}
